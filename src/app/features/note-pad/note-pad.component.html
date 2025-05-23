@@ -1,7 +1,9 @@
-<div>
+<div class="note-pad">
   <h1>Note Pad</h1>
- <textarea [(ngModel)]="noteContent" rows="10" cols="30"></textarea>
-  <button (click)="saveNote()">Save Note</button>
-  <button (click)="clearNote()">Clear Note</button>
+  <textarea class="note" [(ngModel)]="noteContent" rows="10" cols="30"></textarea>
+  <div class="buttons">
+    <button (click)="saveNote()">Save Note</button>
+    <button (click)="clearNote()">Clear Note</button>
+  </div>
   <p *ngIf="savedMessage">{{ savedMessage }}</p>
 </div>

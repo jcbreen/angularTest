@@ -12,16 +12,14 @@ import { FormsModule } from '@angular/forms';
 export class NotePadComponent {
   noteContent: any;
   savedMessage: any;
+  ngOnInit() {
+    this.noteContent = 'This a teat note';
+  }
 
   saveNote() {
     console.log('Note saved');
   }
   clearNote() {
     console.log('Note cleared');
-  }
-
-  prescription() {
-    const newName: string = 'cool stuff';
-    this.noteContent;        
   }
 }
