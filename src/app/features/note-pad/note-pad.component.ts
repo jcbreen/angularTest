@@ -15,6 +15,7 @@ export class NotePadComponent {
   ngOnInit() {
     this.noteContent = 'This a teat note';
   }
+  // TODO: this is a test of the git
 
   saveNote() {
     console.log('Note saved');
